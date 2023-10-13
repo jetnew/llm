@@ -67,6 +67,5 @@ def summarize(text, prompt, model="gpt-3.5-turbo", max_summary_length=700):
 
 if __name__ == "__main__":
     from website import website_text
-    text = website_text("https://www.lesswrong.com/posts/6g8cAftfQufLmFDYT/you-re-measuring-model-complexity-wrong")
-    # print("Tokens:", len(tokenize(text)))
-    print("Summary:\n\n", summarize(text, "Summarize the text."))
+    text = website_text("https://news.ycombinator.com/item?id=37863415")
+    print("Summary:\n\n", summarize(text, "What's the best advice?"))
